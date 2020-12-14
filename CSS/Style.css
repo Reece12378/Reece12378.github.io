@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  padding-top: 1%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: BackgroundGradient 21s ease-in-out infinite;
+    background: linear-gradient(90deg, #9C4F96, #FF6355, #FBA949, #FAE442, #8BD448, #2AA8F2);
+    background-size: 400% 400%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size:20px; 
+    color: rgb(51, 47, 47);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  #logo{
+    font-size:20px;  
+    font-weight:bold;
+    float:left;
+    padding: 15px 15px;
+    margin-right:10%;  
+    margin-left:5%; 
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size:20px;   
+    border: none;
+    outline: none;
+    color: rgb(51, 47, 47);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    margin-top: 0.5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: fixed;
+    background-color: #f9f9f9;
+    opacity: 90%;
+    border-radius: 2.5%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(75, 72, 72);
+    font-size: 16px;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .mcontent{
+    background-color: white;
+    margin-top: 2.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2.5%;
+    border-radius: 10px;
+    opacity: 75%;
+    z-index: -1;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .column {
+    text-align: center;
+    flex: 33.33%;
+    padding: 10px;
+  }
+
+  h1{
+      animation: Heading1Grad 30s ease-in-out infinite;
+      background: linear-gradient(-60deg, #fa0909, #0974fa, #51fa09, #fa8409, #faf909);
+      background-size: 300%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      padding-top: 2%;
+  }
+
+  .footer {
+    position: static;
+    background-color: transparent;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  @keyframes BackgroundGradient {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+
+  @keyframes Heading1Grad {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
