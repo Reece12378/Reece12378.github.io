@@ -3,16 +3,16 @@
   }
 
 body {
-  padding-top: 1%;
-    margin: 0;
+
     font-family: Arial, Helvetica, sans-serif;
   }
   
+
+
   .navbar {
     position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden;
     animation: BackgroundGradient 21s ease-in-out infinite;
     background: linear-gradient(90deg, #9C4F96, #FF6355, #FBA949, #FAE442, #8BD448, #2AA8F2);
     background-size: 400% 400%;
@@ -22,7 +22,6 @@ body {
   
   .navbar a {
     float: left;
-    font-size:20px; 
     color: rgb(51, 47, 47);
     text-align: center;
     padding: 14px 16px;
@@ -31,7 +30,7 @@ body {
   }
 
   #logo{
-    font-size:20px;  
+    font-size:1.5vw;  
     font-weight:bold;
     float:left;
     padding: 15px 15px;
@@ -95,10 +94,9 @@ body {
     margin-top: 2.5%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 2.5%;
     border-radius: 10px;
     opacity: 75%;
-    z-index: -1;
+    z-index: 0;
   }
 
   .row {
@@ -120,6 +118,11 @@ body {
       -webkit-text-fill-color: transparent;
       text-align: center;
       padding-top: 2%;
+      font-size: 2.5vw;
+  }
+
+  h2{
+    font-size: 1.5vw;
   }
 
   .footer {
@@ -144,8 +147,13 @@ body {
 }
 
 
-  @media screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .column {
-      width: 100%;
+      flex: 100%;
+    }
+
+    .dropdown-content {
+      padding: 10px 16px;
     }
   }
+  
